@@ -14,7 +14,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 /**
  * mapper扫描包
  */
-@MapperScan(basePackages = "com.example.mybatisdemo.dao")
+@MapperScan(basePackages = {"com.example.mybatisdemo.dao","com.example.mybatisdemo.test.mapper"})
 @SpringBootApplication
 public class ApplicationMain extends WebMvcConfigurerAdapter implements CommandLineRunner {
 
