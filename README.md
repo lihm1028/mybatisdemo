@@ -104,3 +104,24 @@ https://blog.csdn.net/isea533/article/details/42102297
 ```
 mvn mybatis-generator:generate
 ```
+
+
+# mybatis-plus 生成代码
+
+## 1.添加依赖
+```
+ <!-- mybatis-plus-generator 代码生成-->
+<dependency>
+    <groupId>com.baomidou</groupId>
+    <artifactId>mybatis-plus-generator</artifactId>
+    <version>3.1.0</version>
+    <scope>test</scope>
+</dependency>
+
+```
+
+## 2.通过AutoGenerator生成
+```
+参照 https://www.baomidou.com/pages/d357af/
+
+```
