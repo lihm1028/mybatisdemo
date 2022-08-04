@@ -1,6 +1,7 @@
 package com.example.mybatisdemo;
 
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
@@ -8,12 +9,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
-import tk.mybatis.spring.annotation.MapperScan;
+
 
 /**
  * mapper扫描包
  */
-@MapperScan(basePackages = "com.example.mybatisdemo.mapper")
+@MapperScan(basePackages = "com.example.mybatisdemo.dao")
 @SpringBootApplication
 public class ApplicationMain extends WebMvcConfigurerAdapter implements CommandLineRunner {
 
