@@ -1,4 +1,12 @@
 package com.example.mybatisdemo.service;
 
-public class UserService {
+import com.example.mybatisdemo.model.UserInfo;
+
+import java.util.List;
+
+public interface UserInfoService {
+
+    UserInfo store(UserInfo userInfo);
+
+    List<UserInfo> selectAll();
 }

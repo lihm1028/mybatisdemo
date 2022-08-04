@@ -12,7 +12,7 @@
         <property name="endingDelimiter" value="`"/>
 
         <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
-            <property name="mappers" value="tk.mybatis.springboot.util.MyMapper"/>
+            <property name="mappers" value="com.example.mybatisdemo.util.MyMapper"/>
         </plugin>
 
         <!--自定义生成注释，用于生成vo的@ApiModel注解，在MyCommentGenerator中配置-->
